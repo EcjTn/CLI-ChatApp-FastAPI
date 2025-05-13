@@ -8,11 +8,6 @@ import os
 letras = string.ascii_letters
 letras += string.digits
 
-
-
-
-
-
 usrPicked = input("Enter username: ")
 
 if usrPicked == "":
@@ -21,31 +16,7 @@ if usrPicked == "":
 
 
 
-
-
-
 roomPicked = input('Enter Room number(1/2): ')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 while True:
     msgPicked = input("Your message: ")
 
@@ -63,11 +34,6 @@ while True:
 
 
 
-
-
-
-
-
     response = requests.post(url, json=data)
 
 
@@ -81,21 +47,14 @@ while True:
 
 
     chatroom = response_data[1]
-
-
-
-
-
-
-
-    print("CHATROOM 2")
+    
     for msg_id in sorted(chatroom):
         msg = chatroom[msg_id]
         print(f"[{msg_id}] {msg['username']}: {msg['message']}")
 
 
 
-
+#############################################
 
 
 
