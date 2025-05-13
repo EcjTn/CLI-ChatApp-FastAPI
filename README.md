@@ -6,6 +6,8 @@ This is a simple chatroom backend built using FastAPI. It allows users to send m
 - If no username is provided, it will default to random strings.
 - Messages are stored in a Python dictionary.
 - Data is not saved permanently. Once the server stops, all messages are lost.
+- Use only for temporary messages
+- Messages only appear/updated when API request is sent
 
 
 
