@@ -2,6 +2,7 @@ from fastapi import FastAPI, Path, HTTPException
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 
+app = FastAPI(docs_url=None, redoc_url=None)
 
 chatroom1 = {}
 chatroom2 = {}
