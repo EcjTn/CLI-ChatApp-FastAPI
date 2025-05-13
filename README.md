@@ -1,5 +1,7 @@
 # FastAPI Chatroom API
 
+## Project only for test and will likely be discontinued 
+
 This is a simple chatroom backend built using FastAPI. It allows users to send messages to a specific chatroom (Room 1/2) using HTTP POST requests.
 
 - Users can send messages with a username and message.
