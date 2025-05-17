@@ -11,10 +11,8 @@ letras += string.digits
 usrPicked = input("Enter username: ")
 
 if usrPicked == "":
-    for x in range(18):
+    for x in range(15):
         usrPicked += random.choice(letras)
-
-
 
 roomPicked = input('Enter Room number(1/2): ')
 while True:
@@ -31,16 +29,7 @@ while True:
 
     os.system("cls")
 
-
-
-
     response = requests.post(url, json=data)
-
-
-#print(json.dumps(response.json(), indent=5))
-
-#print("the json response")
-
 
     response_data = response.json()
 
@@ -51,31 +40,5 @@ while True:
     for msg_id in sorted(chatroom):
         msg = chatroom[msg_id]
         print(f"[{msg_id}] {msg['username']}: {msg['message']}")
-
-
-
-#############################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
